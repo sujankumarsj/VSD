@@ -1,8 +1,4 @@
 ### This project is for internship.
+## Day 1
 
-![Vechicle](/apple.png)
 
-## DAY1
-
-&#9658; Summary 
-Verilog codes
