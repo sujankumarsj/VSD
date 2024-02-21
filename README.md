@@ -122,4 +122,15 @@ This repo is intended to document the weekly progress.
 
 ![vending machine block diagram](<vending machine block diagram.jpg>)
 
+###  *Input Waveform:*
+
+![input waveform](<input waveform.jpg>)
+
+
+
+###  *Output Waveform:*
+
+![output waveform](<output waveform.jpg>)
+
+
 </details>    
