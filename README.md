@@ -47,7 +47,7 @@ This repo is intended to document the weekly progress.
 
 ### CLONING RISC-V GNU TOOLCHAIN
 
-# To install git 
+## To install git 
 ```sudo apt install git-all```   
 
  *make sure to install the dependencies*
@@ -91,3 +91,35 @@ This repo is intended to document the weekly progress.
 
 ![gtkwave](a5.jpg)
 </details>
+
+### The Second online meet was held on 20th of Feb 2024 @6PM
+
+<details>
+    <summary> TASK 2 </summary>
+
+### To identify Input ports, input waveforms, output ports and output waveforms of the design.
+
+### *Column of I/O Elements:*
+
+| Sl.No   | Name of the Pin  | Direction  | Width | Description |
+|------------|------------|------------|--------|-----|
+| 1. | Product_Out     | Output     |1|Product|
+| 2.     | Coin_In    | Input     | 2 |  Only three Coins |
+|      |     |      |  | 1=2'b01|
+|      |     |      |  | 2=2'b10|
+|      |     |      |  | 5=2'b11|
+| 3.     | Clk     | Input     | 1 | Clock Signal|
+| 4.     | Coin_Out   | Output     | 2 |  Only three Coins |
+|      |     |      |  | 1=2'b01|
+|      |     |      |  | 2=2'b10|
+|      |     |      |  | 5=2'b11|
+| 5.     | Rst    | Input     | 1 | Reset Signal|
+| 6.     | En    | Input     | 1 | Enable Signal|
+
+
+
+###  *Block Diagram of Vending Machine:*
+
+![vending machine block diagram](<vending machine block diagram.jpg>)
+
+</details>    
