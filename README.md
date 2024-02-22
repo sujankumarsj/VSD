@@ -99,20 +99,19 @@ This repo is intended to document the weekly progress.
 
 ### To identify Input ports, input waveforms, output ports and output waveforms of the design.
 
+### Objective:
+*The objective here is to design Vending Machine Controller which accepts money inputs(i and j) in any sequence and delivers the products when the required amount has been deposited and gives back the change. Here an additional facility is provided to the user. It is possible to withdraw the deposited money in between if the customer wishes so by pressing a push button(pu).*
+
 ### *Column of I/O Elements:*
 
 | Sl.No   | Name of the Pin  | Direction  | Width | Description |
 |------------|------------|------------|--------|-----|
 | 1. | Product_Out     | Output     |1|Product|
-| 2.     | Coin_In    | Input     | 2 |  Only three Coins |
-|      |     |      |  | 1=2'b01|
-|      |     |      |  | 2=2'b10|
-|      |     |      |  | 5=2'b11|
+| 2.     | Coin_In    | Input     | 2 |  Only two Coins |
+|      |     |      |  | Rs.1 and Rs.2|
 | 3.     | Clk     | Input     | 1 | Clock Signal|
-| 4.     | Coin_Out   | Output     | 2 |  Only three Coins |
-|      |     |      |  | 1=2'b01|
-|      |     |      |  | 2=2'b10|
-|      |     |      |  | 5=2'b11|
+| 4.     | Coin_Out   | Output     | 2 |  Only two Coins |
+|      |     |      |  | Rs.1 and Rs.2|
 | 5.     | Rst    | Input     | 1 | Reset Signal|
 | 6.     | En    | Input     | 1 | Enable Signal|
 
@@ -122,15 +121,22 @@ This repo is intended to document the weekly progress.
 
 ![vending machine block diagram](<vending machine block diagram.jpg>)
 
+### *Specifications:*
+
+1. Price of the product =Rs.3
+2. Possible money inputs =Rs.2 & Rs.1
+3. Product to be delivered when Rs.3 or Rs.4 is reached.
+4. A push button is there (pu) which indicates the cancellation of transaction and the return of the amount deposited.
+
 ###  *Input Waveform:*
 
-![input waveform](<input waveform.jpg>)
+![input waveform1](<input waveform updated .jpg>)
 
 
 
 ###  *Output Waveform:*
 
-![output waveform](<output waveform.jpg>)
+![output waveform](<output waveform updated.jpg>)
 
 
 </details>    
