@@ -128,15 +128,47 @@ This repo is intended to document the weekly progress.
 3. Product to be delivered when Rs.3 or Rs.4 is reached.
 4. A push button is there (pu) which indicates the cancellation of transaction and the return of the amount deposited.
 
-###  *Input Waveform:*
-
-![input waveform1](<input waveform updated .jpg>)
-
-
-
-###  *Output Waveform:*
-
-![output waveform](<output waveform updated.jpg>)
 
 
 </details>    
+
+### The Third online meet was held on 22th of Feb 2024 @6PM
+
+<details>
+    <summary> TASK 3 </summary>
+
+*Cloning my github repositories:*    
+```git clone https://github.com/sujankumarsj/VSD.git```
+
+![git_clone](<git clone sujan.jpg>)
+
+*Simulating iverilog by taking files from the folder verilog_code* 
+```cd VSD```
+
+```cd verilog_code```
+
+```iverilog vend.v tb_vend.v```
+
+
+*Generating dump_file*
+
+```./a.out```
+
+![dumpfile](dumpfile.jpg)
+
+*To get I/O waveform*
+
+```gtkwave dumpfile.vcd```
+
+![gtkwave](gtkwave.jpg)
+
+### Wave Forms:
+###  *Input Waveform:*
+
+![input waveform1](<in wave.jpg>)
+
+###  *Output Waveform:*
+
+![output waveform](<op wave.jpg>)
+
+</details> 
