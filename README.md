@@ -240,17 +240,17 @@ This repo is intended to document the weekly progress.
 
 ![net5](net5.jpg)
 
-*To check whether the netlist will match with the Design:*
+<!-- *To check whether the netlist will match with the Design:* -->
 
-```iverilog vend_netlist.v tb_vend.v```
+<!-- ```iverilog vend_netlist.v tb_vend.v``` -->
 
-```./a.out```
+<!-- ```./a.out``` -->
 
-```gtkwave dumpfile.vcd```
+<!-- ```gtkwave dumpfile.vcd``` -->
 
-![final](final.jpg)
+<!-- ![final](final.jpg) -->
 
-*Netlist waveform*
+<!-- *Netlist waveform* -->
 
-![netlist wave](<netlist wave.jpg>)
+<!-- ![netlist wave](<netlist wave.jpg>) -->
 </details>     
