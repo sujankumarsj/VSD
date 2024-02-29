@@ -244,6 +244,13 @@ This repo is intended to document the weekly progress.
 
 ```iverilog vend_netlist.v tb_vend.v```
 
-![iverilog](iverilog.jpg)
+```./a.out```
 
+```gtkwave dumpfile.vcd```
+
+![final](final.jpg)
+
+*Netlist waveform*
+
+![netlist wave](<netlist wave.jpg>)
 </details>     
