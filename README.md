@@ -172,3 +172,78 @@ This repo is intended to document the weekly progress.
 ![output waveform](<op wave.jpg>)
 
 </details> 
+
+### The Forth online meet was held on 27th of Feb 2024 @6PM
+
+<details>
+    <summary> TASK 4 </summary>
+
+*Invoking yosys inside verilog_code file:* 
+
+```yosys```
+
+![invoke yosys](yosys.jpg)
+
+*Reading the Library:*    
+
+```read_liberty -lib /home/sujankumarsj/VSD/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+
+*Reading the Design:*    
+
+```read_verilog vend.v```
+
+*Specifying the module that we are synthesizing:*    
+
+```synth -top vend```
+
+![liberty to synth](synthesis.jpg)
+
+*To generate the netlist:*    
+
+```abc -liberty /home/sujankumarsj/VSD/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+
+![abc -liberty](<generating netlist.jpg>)
+
+*To see the graphical version of the logic:*    
+
+```show```
+
+![graphical version](<graphical version.jpg>)
+
+*To write the netlist:*    
+
+```write_verilog vend_netlist.v```
+
+![write_verilog](write_verilog.jpg)
+
+*Using the switch '-noattr' to get the simplified version of netlist file:*    
+
+```write_verilog -noattr vend_netlist.v```
+
+*To open the netlist:*    
+
+```!gvim vend_netlist.v```
+
+![open netlist](<netlist file.jpg>)
+
+
+*Opening the netlist file:*
+
+
+![net1](net1.jpg)
+
+![net2](net2.jpg)
+
+![net3](net3.jpg)
+
+![net4](net4.jpg)
+
+![net5](net5.jpg)
+
+*To check whether the netlist will match with the Design:*
+
+```iverilog vend_netlist.v tb_vend.v```
+
+![iverilog](iverilog.jpg)
+
+</details>     
