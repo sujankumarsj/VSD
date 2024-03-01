@@ -264,3 +264,107 @@ This repo is intended to document the weekly progress.
 
 ![netlist output wave](<netlist output wave.jpg>)
 </details>     
+
+### The Fifth task was given  on thf First of March 2024 @6PM
+
+<details>
+    <summary> TASK 5 </summary>
+
+*Design file after git clone*
+
+*We are checking gtkwave for the design*
+
+```iverilog iiitb_vm.v ```
+
+```./a.out ```
+
+``` gtkwave iiitb_vm.vcd```
+
+![design](design.jpg)
+
+![design wave](<design wave.jpg>)
+
+
+
+### To generate netlist:
+
+
+*Cloning the github repo:*    
+
+```git clone https://github.com/majilokesh/iiitb_tlc.git```
+
+*Invoking yosys inside iiitb_vm file:* 
+
+```yosys```
+
+*Reading the Library:*    
+
+```read_liberty -lib /home/sujankumarsj/iiitb_vm/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+
+![yosys s](<yosys s.jpg>)
+
+
+*Reading the Design:*    
+
+```read_verilog iiitb_vm.v```
+
+
+*Specifying the module that we are synthesizing:*    
+
+```synth -top iiitb_vm```
+
+![read design](<read design.jpg>)
+
+
+*To generate the netlist:*    
+
+```abc -liberty /home/sujankumarsj/iiitb_vm/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+
+![technology mapping using abc](<technology mapping using abc.jpg>)
+
+
+*To write the netlist:*    
+
+```write_verilog netlist.v```
+
+
+*Using the switch '-noattr' to get the simplified version of netlist file:*    
+
+```show```
+
+```flatten```
+
+```write_verilog -noattr netlist.v```
+
+![flatten design](<fatten design.jpg>)
+
+*To see the graphical version of the logic:*    
+
+```show```
+
+![dot view](<dot view.jpg>)
+
+
+
+*To open the netlist:*    
+
+```!gvim vend_netlist.v```
+
+![!gvim](!gvim.jpg)
+
+
+*To check whether the netlist will match with the Design:*
+
+ ```iverilog ../iiitb_vm/verilog_model/primitives.v ../iiitb_vm/verilog_model/sky130_fd_sc_hd.v netlist.v iiitb_vm.v``` 
+
+```./a.out``` 
+
+ ```gtkwave iiitb_vm.vcd```
+
+
+*GTKWAVE of netlist*
+
+![gtk wave](<gtk wave.jpg>)
+
+
+</details> 
