@@ -183,14 +183,16 @@ This repo is intended to document the weekly progress.
 
 ```yosys```
 
-![invoke yosys](yosys.jpg)
+![invoke yosys](yosys-1.jpg)
+
 
 *Reading the Library:*    
 
 ```read_liberty -lib ../../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
 
+![read liberty](<read liberty-1.jpg>)
 
-![read liberty](<read liberty.jpg>)
+
 
 *Reading the Design:*    
 
@@ -204,7 +206,9 @@ This repo is intended to document the weekly progress.
 
 ```synth -top vend```
 
-![synth -top](<synth -top.jpg>)
+
+![synth-top](<synth -top-1.jpg>)
+
 
 
 *To generate the netlist:*    
