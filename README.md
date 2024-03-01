@@ -143,6 +143,7 @@ This repo is intended to document the weekly progress.
 ![git_clone](<git clone sujan.jpg>)
 
 *Simulating iverilog by taking files from the folder verilog_code* 
+
 ```cd VSD```
 
 ```cd verilog_code```
@@ -165,11 +166,11 @@ This repo is intended to document the weekly progress.
 ### Wave Forms:
 ###  *Input Waveform:*
 
-![input waveform1](<in wave.jpg>)
+![design input wave](<design input wave.jpg>)
 
 ###  *Output Waveform:*
 
-![output waveform](<op wave.jpg>)
+![design output wave](<design output wave.jpg>)
 
 </details> 
 
@@ -186,29 +187,36 @@ This repo is intended to document the weekly progress.
 
 *Reading the Library:*    
 
-```read_liberty -lib /home/sujankumarsj/VSD/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+```read_liberty -lib ../../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+
+
+![read liberty](<read liberty.jpg>)
 
 *Reading the Design:*    
 
 ```read_verilog vend.v```
 
+*Reading the Design constraints in my sky.v folder:* 
+
+```read_verilog sky.v```
+
 *Specifying the module that we are synthesizing:*    
 
 ```synth -top vend```
 
-![liberty to synth](synthesis.jpg)
+![synth -top](<synth -top.jpg>)
+
 
 *To generate the netlist:*    
 
-```abc -liberty /home/sujankumarsj/VSD/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+```abc -liberty ../../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
 
-![abc -liberty](<generating netlist.jpg>)
 
 *To see the graphical version of the logic:*    
 
 ```show```
 
-![graphical version](<graphical version.jpg>)
+![dot.viewer](<dot viewer.jpg>)
 
 *To write the netlist:*    
 
@@ -220,37 +228,35 @@ This repo is intended to document the weekly progress.
 
 ```write_verilog -noattr vend_netlist.v```
 
+```flatten```
+
+```show```
+
 *To open the netlist:*    
 
 ```!gvim vend_netlist.v```
 
-![open netlist](<netlist file.jpg>)
-
+![final netlist](<open netlist.jpg>)
 
 *Opening the netlist file:*
 
+![netlist file](netlist1.jpg)
 
-![net1](net1.jpg)
+![netlist file](netlist2.jpg)
 
-![net2](net2.jpg)
+*To check whether the netlist will match with the Design:*
 
-![net3](net3.jpg)
+ ```iverilog vend_netlist3.v tb_vend.v``` 
 
-![net4](net4.jpg)
+```./a.out``` 
 
-![net5](net5.jpg)
+ ```gtkwave dumpfile.vcd```
 
-<!-- *To check whether the netlist will match with the Design:* -->
 
-<!-- ```iverilog vend_netlist.v tb_vend.v``` -->
+![alt text](<dump file.jpg>)
 
-<!-- ```./a.out``` -->
 
-<!-- ```gtkwave dumpfile.vcd``` -->
+ *Netlist waveform*
 
-<!-- ![final](final.jpg) -->
-
-<!-- *Netlist waveform* -->
-
-<!-- ![netlist wave](<netlist wave.jpg>) -->
+![netlist output wave](<netlist output wave.jpg>)
 </details>     
