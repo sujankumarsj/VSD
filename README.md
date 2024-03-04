@@ -34,7 +34,7 @@ BOARD SPECIFICATIONS:
 
 This repo is intended to document the weekly progress.
 
-### The first online meet was held on 16th of Feb 2024 @6PM
+### The First online meet was held on 16th of Feb 2024 @6PM
 
 <details>
     <summary> TASK 1 </summary>
@@ -174,7 +174,7 @@ This repo is intended to document the weekly progress.
 
 </details> 
 
-### The Forth online meet was held on 27th of Feb 2024 @6PM
+### The Fourth online meet was held on 27th of Feb 2024 @6PM
 
 <details>
     <summary> TASK 4 </summary>
@@ -265,7 +265,7 @@ This repo is intended to document the weekly progress.
 ![netlist output wave](<netlist output wave.jpg>)
 </details>     
 
-### The Fifth task was given  on thf First of March 2024 @6PM
+### The Fifth task was given  on  First of March 2024 
 
 <details>
     <summary> TASK 5 </summary>
