@@ -274,16 +274,16 @@ This repo is intended to document the weekly progress.
 
 *We are checking gtkwave for the design*
 
-```iverilog iiitb_vm.v ```
+```iverilog iiitb_vm.v iiitb_vm_tb.v```
 
 ```./a.out ```
 
-``` gtkwave iiitb_vm.vcd```
+``` gtkwave dumpfile.vcd```
 
-![design](design.jpg)
+![alt text](fin.jpg)
 
-![design wave](<design wave.jpg>)
 
+![alt text](q1.jpg)
 
 
 ### To generate netlist:
@@ -355,16 +355,16 @@ This repo is intended to document the weekly progress.
 
 *To check whether the netlist will match with the Design:*
 
- ```iverilog ../iiitb_vm/verilog_model/primitives.v ../iiitb_vm/verilog_model/sky130_fd_sc_hd.v netlist.v iiitb_vm.v``` 
+ ```iverilog primitives.v sky130_fd_sc_hd.v netlist2.v iiitb_vm.v``` 
 
 ```./a.out``` 
 
- ```gtkwave iiitb_vm.vcd```
+ ```gtkwave dumpfile.vcd```
 
+![alt text](q.jpg)
 
 *GTKWAVE of netlist*
 
-![gtk wave](<gtk wave.jpg>)
-
+![alt text](gtl.jpg)
 
 </details> 
